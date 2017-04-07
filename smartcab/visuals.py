@@ -93,12 +93,6 @@ def plot_trials(csv):
 	testing_data = data[data['testing'] == True]
 
 	plt.figure(figsize=(12,8))
-	training_data["accd"] = training_data['minor_acc'] + training_data['major_acc']
-	testing_data["accd"] = testing_data['minor_acc'] + testing_data['major_acc']
-	training_data["voil"] = training_data['minor'] + training_data['major']
-	testing_data["voil"] = testing_data['minor'] + testing_data['major']
-	display(training_data[['average_reward','reliability_rate', 'good_actions', 'good', 'minor', 'major', 'minor_acc', 'major_acc', 'accd', 'voil']].dropna())
-	display(testing_data[['average_reward','reliability_rate', 'good_actions', 'good', 'minor', 'major', 'minor_acc', 'major_acc', 'accd', 'voil']].dropna())
 
 	###############
 	### Average step reward plot
