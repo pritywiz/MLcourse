@@ -198,6 +198,5 @@ def run():
     #   n_test     - discrete number of testing trials to perform, default is 0
     sim.run(n_test = 30, tolerance = 0.05)
 
-
 if __name__ == '__main__':
     run()
